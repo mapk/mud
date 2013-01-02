@@ -27,6 +27,9 @@
 /* #Site Styles
 ================================================== */
  	section { padding:20px 0 0; width:100%; position:relative; }
+ 	.container { @include clearfix; }
+
+ 	.drop-arrow { position:absolute; left:-50px; font-size:48px; color:$yellowLight; }
 
  	.right { float:right; }
  	.left { float:left; }
