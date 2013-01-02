@@ -48,7 +48,7 @@
 	ul.socialicons { margin:0; padding:0; list-style:none; }
 	ul.socialicons li { float:left; display:inline; cursor:pointer; margin-right:5px; padding:5px 5px 0; @include border-radius(2px); }
 	ul.socialicons li:last-child { margin-right:0; }
-	ul.socialicons li:hover { background:rgba(255,255,255,.6); }
+	ul.socialicons li:hover { background:rgba(255,255,255,.6); position:relative; top:1px; }
 
 
 
