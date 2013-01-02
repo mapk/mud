@@ -1,0 +1,92 @@
+/* Core variables and mixins */
+@import "variables.scss"; /* Modify this for custom colors, font-sizes, etc */
+@import "mixins.scss";
+
+/* Grid system and page structure */
+@import "base.scss"; /* All styles in master.scss are built on top of theme.scss */
+@import "skeleton.scss"; /* Grid */
+
+/* Components: Font-icons */
+@import "font-icons.scss";
+
+/* Components: Buttons */
+@import "buttons.scss";
+
+/* Components: Tooltips */
+@import "tooltip.scss";
+@import "reveal.scss";
+@import "accordion.scss";
+
+
+/* Table of Contents
+==================================================
+	#Site Styles
+	#Styleguide Styles
+
+
+/* #Site Styles
+================================================== */
+ 	section { padding:20px 0 0; width:100%; position:relative; }
+
+ 	.right { float:right; }
+ 	.left { float:left; }
+ 	.middle { vertical-align:middle; }
+ 	.bottom { vertical-align:bottom; }
+ 	.top { vertical-align:top; }
+ 	.quiet { color:$gray; }
+
+	.art-terms:hover span { color:$orange; }
+	.art-terms:hover span:before { content:"["; }
+	.art-terms:hover span:after { content:"]"; }
+
+	ul.portfolio { margin:0; padding:0; list-style:none; }
+	ul.portfolio li { height:200px; background:rgba(255,255,255,.6); }
+
+	ul.socialicons { margin:0; padding:0; list-style:none; }
+	ul.socialicons li { float:left; display:inline; cursor:pointer; margin-right:5px; padding:5px 5px 0; @include border-radius(2px); }
+	ul.socialicons li:last-child { margin-right:0; }
+	ul.socialicons li:hover { background:rgba(255,255,255,.6); }
+
+
+
+/* #Styleguide Styles
+================================================== */
+	header { width:100%; height:50px; padding:0; position:fixed; top:0; right:0; left:0; /* z-index is found in hrbl.theme.css */
+		@include box-shadow(0 1px 1px rgba(0,0,0,.5), inset 0 0 7px rgba(255,255,255,1));
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #d6d6d6 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#d6d6d6 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#d6d6d6 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#d6d6d6 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
+		 }
+
+ 	#navigation { list-style:none; width:auto; margin:0 0 0 20px; padding:0; }
+ 	#navigation { *zoom: 1; *zoom: 1; }
+ 	#navigation:before,
+	#navigation:after { display:table; content: ""; }
+ 	#navigation:after { clear:both; }
+ 	#navigation li { display:table-cell; vertical-align:middle; width:120px; height:50px; text-align:center; border-right:1px solid #ccc; border-left:1px solid #FFF;  
+ 		@include box-sizing(border-box); @include transition(background .2s linear, color .2s linear); }
+ 	#navigation li:hover { background:#f9f9f9; }
+ 	#navigation li a { display:table-cell; vertical-align:middle; width:120px; height:50px; text-transform:uppercase; white-space:nowrap; color:#515151; }
+ 	#navigation li a:hover { color:#7AC143; position:relative; top:1px; text-shadow:0 1px 0 #FFF; }
+ 	#navigation li:first-child { border-left:none; text-align:left; width:auto; padding-right:20px; text-transform:inherit; }
+ 	#navigation li:first-child:hover { background:transparent; }
+ 	#navigation li:first-child:active { background:transparent; @include box-shadow(none); }
+ 	#navigation li a h4 { color:#333; text-shadow:0 1px 0 rgba(255,255,255,.8); margin:0; text-transform:none; }
+ 	#navigation li a:hover h4 { color:#000; text-shadow:0 1px 0 rgba(255,255,255,.8); }
+ 	#navigation li:last-child { border-right:none; width:auto; }
+ 	#navigation li:active { color:#555; background:#f4f4f4; @include box-shadow(inset 0 0 5px rgba(0,0,0,.5)); @include transition(none); }
+
+	footer { background:$gray; width:100%; height:50px; color:$white !important; padding:10px 0; }
+
+ 	#grid { background:url(../images/retina_wood.png) repeat fixed; @include box-shadow(inset 0 0 5px rgba(0,0,0,.5)); }
+ 	#tables { background:url(../images/whitey.png) repeat fixed; @include box-shadow(inset 0 0 5px rgba(0,0,0,.5)); }
+ 	#forms { background:url(../images/worn_dots.png) repeat fixed; @include box-shadow(inset 0 0 5px rgba(0,0,0,.5)); }
+ 	#modals { background:url(../images/whitey.png) repeat fixed; @include box-shadow(inset 0 0 5px rgba(0,0,0,.5)); }
+
+	.box1 { display:inline-block; width:220px; padding:5px 10px; background:#eee; margin:5px 12px 5px 0;
+		@include box-sizing(border-box); }
