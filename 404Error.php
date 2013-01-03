@@ -49,10 +49,11 @@
 
 	<section style="margin-top:100px;">
 		<div class="container">
+			<img src="images/me-brown-grunge.png" class="logo" style="top:-112px;" />
 			<div class="row">
 				<div class="col8">
 					<h6>404 Error: Page Not Found.</h6>
-					<p>Looks like the page you requested has been removed... or maybe you jacked up the URL entry. Either way, <a href="index.html">return to the home page</a>.</p>
+					<p>Looks like the page you requested has been removed... or maybe you jacked up the URL entry. Either way, <a href="index.html" style="text-decoration:underline;">return to the home page</a>.</p>
 				</div>
 			</div>
 		</div>
