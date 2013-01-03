@@ -29,7 +29,7 @@
  	section { padding:20px 0 0; width:100%; position:relative; }
  	.container { @include clearfix; }
 
- 	.logo { position:absolute; top:-12px; left:-200px; z-index:-1; }
+ 	.logo { position:absolute; top:-12px; left:-200px; z-index:$zindexLogo; }
 
  	.drop-arrow { position:absolute; left:-50px; font-size:48px; color:$yellowLight; }
 
@@ -40,7 +40,7 @@
  	.top { vertical-align:top; }
  	.quiet { color:$gray; }
 
- 	.art-terms { position:relative; }
+ 	.art-terms { position:relative; color:lighten($brown, 70%); font-size:$baseFontSize + 6px; font-family: marck-script, serif; }
 	.art-terms:hover span { color:$orange; }
 	.art-terms:hover span:before { content:"["; }
 	.art-terms:hover span:after { content:"]"; }
