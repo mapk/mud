@@ -26,6 +26,7 @@ $blue:                  #70bfac !default;
 $brown:					#471a0c !default;
 $yellow:				#eecc75 !default;
 $yellowLight:			#fbf4e1 !default;
+$yellowLighter:			#fdfbf4 !default;
 
 
 // Scaffolding
@@ -36,7 +37,7 @@ $textColor:             $brown !default;
 
 // Links
 // -------------------------
-$linkColor:             $blue !default;
+$linkColor:             $brown !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 

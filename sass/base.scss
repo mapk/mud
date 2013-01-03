@@ -46,17 +46,26 @@
  	}
 /*  This section of selectors is for absolute positioning the footer on the bottom */
  	html, body { height:100%; }
-	#wrap { min-height:100%; position:relative; }
+	#wrap { min-height:100%; position:relative; padding-top:100px; @include box-sizing(border-box); }
 	.ie6 #wrap { height:100%; }
-	#wrap > .container { 
-		padding-bottom:50px; /* For footer */
-		padding-top:50px; /* For header */
-	}
-	#wrap > i > .container { /* For some reason I keep getting an <i> tag wrapping around my <footer> or <div> tag above footer, so this should help pad footer with that issue */
-		padding-bottom:50px; /* For footer */
-		padding-top:50px; /* For header */
-	}
+	//#wrap > .container { 
+	//	padding-bottom:50px; /* For footer */
+	//	padding-top:50px; /* For header */
+	//}
+	//#wrap > i > .container { /* For some reason I keep getting an <i> tag wrapping around my <footer> or <div> tag above footer, so this should help pad footer with that issue */
+	//	padding-bottom:50px; /* For footer */
+	//	padding-top:50px; /* For header */
+	//}
 	footer { position:absolute; bottom:0; }
+
+
+/* #Typography
+================================================== */
+	.blue 		{ color:$blue; }
+	.green 		{ color:$green; }
+	.orange 	{ color:$orange; }
+	.brown 		{ color:$brown; }
+	.yellow 	{ color:$yellow; }
 
 
 /* #Typography
