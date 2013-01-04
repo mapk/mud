@@ -802,6 +802,72 @@ hr {
 
   .offset11 {
     padding-left: 704px; } }
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px; }
+
+  .col1, .col2, .col3, .col4,
+  .col5, .col6, .col7, .col8,
+  .col9, .col10, .col11, .col12 {
+    margin: 0; }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10,
+  .col11,
+  .col12 {
+    width: 300px;
+    margin: 0; }
+
+  /* Offsets */
+  .offset1,
+  .offset2,
+  .offset3,
+  .offset4,
+  .offset5,
+  .offset6,
+  .offset7,
+  .offset8,
+  .offset9,
+  .offset10,
+  .offset11,
+  .offset12 {
+    padding-left: 0; } }
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 420px; }
+
+  .col4, .col5, .col6, .col7, .col8,
+  .col9, .col10, .col11, .col12 {
+    margin: 0; }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10,
+  .col11,
+  .col12 {
+    width: 420px;
+    margin: 0; } }
 /* #Clearing
 ================================================== */
 .row:before, .row:after {
@@ -2156,7 +2222,7 @@ input[type="submit"].btn.small {
   *padding-top: 3px;
   *padding-bottom: 3px; }
 
-/* Components: Tooltips */
+/* Components: Tooltips, Modals, Accordion */
 /* Tooltip
 ================================================== */
 .tooltip {
@@ -2445,21 +2511,18 @@ section {
   content: "]"; }
 
 ul.portfolio {
-  margin: 0 20px;
-  padding: 0;
+  margin: 0;
   list-style: none;
-  width: 100%; }
+  width: 100%;
+  float: left; }
 
 ul.portfolio li {
-  width: 220px;
   margin: 0 20px 20px 0;
   padding: 10px 10px 5px;
   color: #471a0c;
   line-height: 21px;
   font-size: 14px;
   background: rgba(255, 255, 255, 0.6);
-  float: left;
-  display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2471,7 +2534,7 @@ ul.portfolio li:last-child {
   margin-right: 0; }
 
 ul.portfolio li img {
-  width: 200px; }
+  width: 100%; }
 
 .thumb {
   position: relative; }
@@ -2549,6 +2612,11 @@ ul.socialicons li:hover {
     top: -105px;
     left: 10px;
     height: 70px; } }
+/* Mobile Landscape and smaller - design for width of 480px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    line-height: 22px; } }
 /* #Styleguide Styles
 ================================================== */
 header {

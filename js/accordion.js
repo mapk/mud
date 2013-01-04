@@ -3,7 +3,7 @@
  * A Simple JQuery Accordion
  *
  * Designed by Switchroyale
- * 
+ *
  * Use Vallenato for whatever you want, enjoy!
  */
 
@@ -13,8 +13,8 @@ $(document).ready(function()
 	$('.accordion-header').toggleClass('inactive-header');
 	
 	//Set The Accordion Content Width
-	var contentwidth = $('.accordion-header').width();
-	$('.accordion-content').css({'width' : contentwidth });
+	//var contentwidth = $('.accordion-header').width();
+	//$('.accordion-content').css({'width' : contentwidth });
 	
 	//Open The First Accordion Section When Page Loads
 	//$('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');

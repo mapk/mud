@@ -12,7 +12,7 @@
 /* Components: Buttons */
 @import "buttons.scss";
 
-/* Components: Tooltips */
+/* Components: Tooltips, Modals, Accordion */
 @import "tooltip.scss";
 @import "reveal.scss";
 @import "accordion.scss";
@@ -45,10 +45,10 @@
 	.art-terms:hover span:before { content:"["; }
 	.art-terms:hover span:after { content:"]"; }
 
-	ul.portfolio { margin:0 20px; padding:0; list-style:none; width:100%; }
-	ul.portfolio li { width:220px; margin:0 20px 20px 0; padding:10px 10px 5px; color:$brown; line-height:$baseLineHeight - 3px; font-size:14px; background:rgba(255,255,255,.6); float:left; display:inline-block; @include box-sizing(border-box); @include border-radius(2px); }
+	ul.portfolio { margin:0; list-style:none; width:100%; float:left; }
+	ul.portfolio li { margin:0 20px 20px 0; padding:10px 10px 5px; color:$brown; line-height:$baseLineHeight - 3px; font-size:14px; background:rgba(255,255,255,.6); @include box-sizing(border-box); @include border-radius(2px); }
 	ul.portfolio li:last-child { margin-right:0; }
-	ul.portfolio li img { width:200px; }
+	ul.portfolio li img { width:100%; }
 
 	.thumb { position:relative; }
 	.thumb .mask { -ms-filter:"progid: DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0; position:absolute; top:0; left:0; width:220px; height:170px; padding:10px; @include box-sizing(border-box); @include transition(opacity .25s ease-in-out); }
@@ -73,6 +73,11 @@
 /* Smaller than 1201px (devices and browsers) */
 	@media only screen and (max-width:1200px) {
 		.logo { position:absolute; top:-105px; left:10px; height:70px; }
+	}
+
+/* Mobile Landscape and smaller - design for width of 480px */
+	@media only screen and (max-width: 767px) {
+		body { font-size:$baseFontSize - 2px; line-height:$baseLineHeight - 2px; }
 	}
 
 
