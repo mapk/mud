@@ -249,12 +249,12 @@ p a, p a:visited {
  * Also: uses Herbalife green! (or customize the background color to match your design)
  */
 ::-moz-selection {
-  background: #a1c63b;
+  background: #70bfac;
   color: white;
   text-shadow: none; }
 
 ::selection {
-  background: #a1c63b;
+  background: #70bfac;
   color: white;
   text-shadow: none; }
 
@@ -2318,7 +2318,7 @@ input[type="submit"].btn.small {
   left: 50%;
   margin-left: -310px;
   width: 540px;
-  background: #eeeeee url(../images/modal-gloss.png) no-repeat -200px -80px;
+  background: #fbf4e1 url(../images/modal-gloss.png) no-repeat -200px -80px;
   position: fixed;
   padding: 30px 40px 34px;
   /* z-index is found in hrbl.theme.css */
@@ -2327,7 +2327,7 @@ input[type="submit"].btn.small {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 
 .reveal-modal.small {
   width: 220px;
@@ -2562,16 +2562,20 @@ ul.portfolio li img {
   filter: alpha(opacity=100);
   opacity: 1; }
 
-.thumb img {
+.thumb > img {
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out; }
 
-.thumb:hover img {
+.thumb:hover > img {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0; }
+
+.reveal-img {
+  border-bottom: 1px solid #FFF;
+  margin-top: 10px; }
 
 ul.socialicons {
   margin: 0;

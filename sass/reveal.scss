@@ -3,15 +3,10 @@
 		
 	.reveal-modal-bg { position:fixed; height:100%; width:100%; background:#000; background:rgba(0,0,0,.8); display:none; top:0; left:0; /* z-index is found in hrbl.theme.css */ }
 	
-	.reveal-modal { visibility:hidden; top:100px !important; left:50%; margin-left:-310px; width:540px; background:#eee url(../images/modal-gloss.png) no-repeat -200px -80px; position:fixed; padding:30px 40px 34px;
+	.reveal-modal { visibility:hidden; top:100px !important; left:50%; margin-left:-310px; width:540px; background:$bodyBackground url(../images/modal-gloss.png) no-repeat -200px -80px; position:fixed; padding:30px 40px 34px;
 		/* z-index is found in hrbl.theme.css */
-		-webkit-border-radius:5px;
-		-moz-border-radius:5px;
-		border-radius:5px;
-		-webkit-box-shadow:0 0 10px rgba(0,0,0,.4);
-		-moz-box-shadow:0 0 10px rgba(0,0,0,.4);
-		-box-shadow:0 0 10px rgba(0,0,0,.4);
-		}
+		@include border-radius(5px);
+		@include box-shadow(0 0 10px rgba(0,0,0,.4)); }
 		
 	.reveal-modal.small 		{ width: 220px; margin-left: -150px;}
 	.reveal-modal.medium 		{ width: 380px; margin-left: -230px;}
