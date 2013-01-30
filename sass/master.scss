@@ -29,7 +29,8 @@
  	section { padding:20px 0 0; width:100%; position:relative; }
  	.container { @include clearfix; }
 
- 	.logo { position:absolute; top:-12px; left:-200px; z-index:$zindexLogo; }
+ 	.logo { position:absolute; top:-12px; left:-200px; z-index:$zindexLogo; height:250px;
+ 		@include transition(all .2s linear); }
 
  	.drop-arrow { position:absolute; left:-50px; font-size:48px; color:$yellowLight; }
 
@@ -63,6 +64,7 @@
 	ul.socialicons li:last-child { margin-right:0; }
 	ul.socialicons li:hover { background:rgba(255,255,255,.6); position:relative; top:1px; }
 
+/* Web Awards */
 	.csswinner { position:absolute; top:15px; right:0px; z-index:999; }
 	.csswinner a { width:81px; height:59px; text-indent:-9000px; display:block; background:url(../images/awards/csswinner-nominee-brown-right.png) no-repeat; }
 	.cssdesignawards { position:absolute; top:80px; right:0px; z-index:999; }

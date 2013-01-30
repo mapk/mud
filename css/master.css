@@ -603,7 +603,11 @@ hr {
   float: left;
   display: inline;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  -o-transition: width 0.2s linear;
+  transition: width 0.2s linear; }
 
 .row {
   margin-bottom: 20px; }
@@ -2470,7 +2474,12 @@ section {
   position: absolute;
   top: -12px;
   left: -200px;
-  z-index: 2; }
+  z-index: 2;
+  height: 250px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
 
 .drop-arrow {
   position: absolute;
@@ -2601,6 +2610,7 @@ ul.socialicons li:hover {
   position: relative;
   top: 1px; }
 
+/* Web Awards */
 .csswinner {
   position: absolute;
   top: 15px;
