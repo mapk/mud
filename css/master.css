@@ -216,7 +216,7 @@ pre {
   font-size: 12px;
   line-height: 20px;
   background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   white-space: pre;
@@ -316,7 +316,7 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 6px 4px;
   outline: none;
   -moz-border-radius: 2px;
@@ -344,13 +344,13 @@ input, textarea, select {
   font-weight: normal; }
 
 input:hover :not([type="file"]:hover) :not([type="submit"]:hover), textarea:hover, select:hover {
-  border: 1px solid #7AC143; }
+  border: 1px solid #7ac143; }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border: 1px solid #CCC;
+  border: 1px solid #cccccc;
   color: #555;
   background: #f3f3f3;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -449,11 +449,11 @@ table h1, table h2, table h3, table h4, table h5, table h6 {
   padding: 0; }
 
 th {
-  border-bottom: 2px solid #CCC;
+  border-bottom: 2px solid #cccccc;
   font-weight: bold; }
 
 td {
-  border-bottom: 1px solid #CCC; }
+  border-bottom: 1px solid #cccccc; }
 
 td:first-child, th:first-child {
   padding-left: 10px; }
@@ -475,7 +475,7 @@ table [class*="span"] {
 /* #Misc
 ================================================== */
 hr {
-  border: dotted #CCC;
+  border: dotted #cccccc;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
@@ -540,7 +540,7 @@ hr {
 @media print {
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: black !important;
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important; }
@@ -560,7 +560,7 @@ hr {
 
   /* Don't show links for images, or javascript/internal links */
   pre, blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid; }
 
   thead {
@@ -902,7 +902,7 @@ hr {
 
 .the-icons span:hover i[class^="icon-"]:before, .the-icons span:hover i[class*=" icon-"]:before {
   font-size: 24px;
-  text-indent: -1.33333em;
+  text-indent: -1.3333333333333333em;
   vertical-align: middle; }
 
 .icon-spin {
@@ -2057,7 +2057,7 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#cccccc',GradientType=0 );
   /* IE6-9 */
   background-repeat: no-repeat;
-  border: 1px solid #CCC;
+  border: 1px solid #cccccc;
   border-bottom-color: #bbb;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -2128,13 +2128,13 @@ a.btn {
 
 .btn-forward,
 .btn-forward:hover {
-  color: #FFF !important;
+  color: white !important;
   border: 1px solid #599441;
   text-shadow: 0 0 1px #69b93a; }
 
 .btn-secondary,
 .btn-secondary:hover {
-  color: #FFF !important;
+  color: white !important;
   border: 1px solid #c8862a;
   text-shadow: 0 0 1px #f99a2e; }
 
@@ -2257,7 +2257,7 @@ input[type="submit"].btn.small {
   margin-left: -5px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #000000; }
+  border-top: 5px solid black; }
 
 .tooltip.left .tooltip-arrow {
   top: 50%;
@@ -2265,7 +2265,7 @@ input[type="submit"].btn.small {
   margin-top: -5px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid #000000; }
+  border-left: 5px solid black; }
 
 .tooltip.bottom .tooltip-arrow {
   top: 0;
@@ -2273,7 +2273,7 @@ input[type="submit"].btn.small {
   margin-left: -5px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #000000; }
+  border-bottom: 5px solid black; }
 
 .tooltip.right .tooltip-arrow {
   top: 50%;
@@ -2281,7 +2281,7 @@ input[type="submit"].btn.small {
   margin-top: -5px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #000000; }
+  border-right: 5px solid black; }
 
 .tooltip-inner {
   max-width: 200px;
@@ -2416,6 +2416,7 @@ input[type="submit"].btn.small {
   display: none;
   background: #eecc75;
   color: white;
+  border-bottom: 1px solid white;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -2574,7 +2575,7 @@ ul.portfolio li img {
   opacity: 0; }
 
 .reveal-img {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid white;
   margin-top: 10px; }
 
 ul.socialicons {
@@ -2600,6 +2601,45 @@ ul.socialicons li:hover {
   position: relative;
   top: 1px; }
 
+.csswinner {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  z-index: 999; }
+
+.csswinner a {
+  width: 81px;
+  height: 59px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../images/awards/csswinner-nominee-brown-right.png) no-repeat; }
+
+.cssdesignawards {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  z-index: 999; }
+
+.cssdesignawards a {
+  width: 68px;
+  height: 96px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../images/awards/css-design-awards-nominee-right-white.png) no-repeat; }
+
+.opl {
+  position: absolute;
+  top: 180px;
+  right: 0px;
+  z-index: 999; }
+
+.opl a {
+  width: 73px;
+  height: 56px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../images/awards/one-page-love-award.png) no-repeat; }
+
 /* #Media Queries
 ================================================== */
 /* Smaller than 1386px (devices and browsers) */
@@ -2621,6 +2661,9 @@ ul.socialicons li:hover {
   body {
     font-size: 14px;
     line-height: 22px; } }
+@media only screen and (max-width: 480px) {
+  .csswinner, .cssdesignawards, .opl {
+    display: none; } }
 /* #Styleguide Styles
 ================================================== */
 header {
@@ -2676,8 +2719,8 @@ header {
   width: 120px;
   height: 50px;
   text-align: center;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #FFF;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid white;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2702,7 +2745,7 @@ header {
   color: #7AC143;
   position: relative;
   top: 1px;
-  text-shadow: 0 1px 0 #FFF; }
+  text-shadow: 0 1px 0 white; }
 
 #navigation li:first-child {
   border-left: none;
