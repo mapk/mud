@@ -2611,10 +2611,23 @@ ul.socialicons li:hover {
   top: 1px; }
 
 /* Web Awards */
+.cssreel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999; }
+
+.cssreel a {
+  width: 120px;
+  height: 120px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../images/awards/css_nomineetag_black.png) no-repeat; }
+
 .csswinner {
   position: absolute;
-  top: 15px;
-  right: 0px;
+  top: 125px;
+  right: 0;
   z-index: 999; }
 
 .csswinner a {
@@ -2626,8 +2639,8 @@ ul.socialicons li:hover {
 
 .cssdesignawards {
   position: absolute;
-  top: 80px;
-  right: 0px;
+  top: 195px;
+  right: 0;
   z-index: 999; }
 
 .cssdesignawards a {
@@ -2639,8 +2652,8 @@ ul.socialicons li:hover {
 
 .opl {
   position: absolute;
-  top: 180px;
-  right: 0px;
+  top: 295px;
+  right: 0;
   z-index: 999; }
 
 .opl a {
@@ -2672,7 +2685,7 @@ ul.socialicons li:hover {
     font-size: 14px;
     line-height: 22px; } }
 @media only screen and (max-width: 480px) {
-  .csswinner, .cssdesignawards, .opl {
+  .cssreel, .csswinner, .cssdesignawards, .opl {
     display: none; } }
 /* #Styleguide Styles
 ================================================== */

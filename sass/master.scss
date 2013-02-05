@@ -65,11 +65,13 @@
 	ul.socialicons li:hover { background:rgba(255,255,255,.6); position:relative; top:1px; }
 
 /* Web Awards */
-	.csswinner { position:absolute; top:15px; right:0px; z-index:999; }
+	.cssreel { position:absolute; top:0; right:0; z-index:999; }
+	.cssreel a { width:120px; height:120px; text-indent:-9000px; display:block; background:url(../images/awards/css_nomineetag_black.png) no-repeat; }
+	.csswinner { position:absolute; top:125px; right:0; z-index:999; }
 	.csswinner a { width:81px; height:59px; text-indent:-9000px; display:block; background:url(../images/awards/csswinner-nominee-brown-right.png) no-repeat; }
-	.cssdesignawards { position:absolute; top:80px; right:0px; z-index:999; }
+	.cssdesignawards { position:absolute; top:195px; right:0; z-index:999; }
 	.cssdesignawards a { width:68px; height:96px; text-indent:-9000px; display:block; background:url(../images/awards/css-design-awards-nominee-right-white.png) no-repeat; }
-	.opl { position:absolute; top:180px; right:0px; z-index:999; }
+	.opl { position:absolute; top:295px; right:0; z-index:999; }
 	.opl a { width:73px; height:56px; text-indent:-9000px; display:block; background:url(../images/awards/one-page-love-award.png) no-repeat; }
 
 
@@ -91,7 +93,7 @@
 	}
 
 	@media only screen and (max-width: 480px) {
-		.csswinner, .cssdesignawards, .opl { display:none; }
+		.cssreel, .csswinner, .cssdesignawards, .opl { display:none; }
 	}
 
 
