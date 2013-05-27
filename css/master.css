@@ -2528,7 +2528,7 @@ ul.portfolio {
 
 ul.portfolio li {
   margin: 0 20px 20px 0;
-  padding: 10px 10px 5px;
+  padding: 0;
   color: #471a0c;
   line-height: 21px;
   font-size: 14px;
@@ -2546,6 +2546,13 @@ ul.portfolio li:last-child {
 ul.portfolio li img {
   width: 100%; }
 
+ul.portfolio li .txt {
+  margin: 0 10px 5px 0;
+  float: right; }
+
+ul.portfolio li a.txt {
+  color: #471a0c; }
+
 .thumb {
   position: relative; }
 
@@ -2559,6 +2566,7 @@ ul.portfolio li img {
   width: 220px;
   height: 170px;
   padding: 10px;
+  color: #471a0c;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
