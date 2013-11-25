@@ -216,7 +216,7 @@ pre {
   font-size: 12px;
   line-height: 20px;
   background-color: #f5f5f5;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   white-space: pre;
@@ -316,7 +316,7 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 6px 4px;
   outline: none;
   -moz-border-radius: 2px;
@@ -344,13 +344,13 @@ input, textarea, select {
   font-weight: normal; }
 
 input:hover :not([type="file"]:hover) :not([type="submit"]:hover), textarea:hover, select:hover {
-  border: 1px solid #7ac143; }
+  border: 1px solid #7AC143; }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border: 1px solid #cccccc;
+  border: 1px solid #CCC;
   color: #555;
   background: #f3f3f3;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -449,11 +449,11 @@ table h1, table h2, table h3, table h4, table h5, table h6 {
   padding: 0; }
 
 th {
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #CCC;
   font-weight: bold; }
 
 td {
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #CCC; }
 
 td:first-child, th:first-child {
   padding-left: 10px; }
@@ -475,7 +475,7 @@ table [class*="span"] {
 /* #Misc
 ================================================== */
 hr {
-  border: dotted #cccccc;
+  border: dotted #CCC;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;
@@ -540,7 +540,7 @@ hr {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important; }
@@ -560,7 +560,7 @@ hr {
 
   /* Don't show links for images, or javascript/internal links */
   pre, blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {
@@ -2061,7 +2061,7 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#cccccc',GradientType=0 );
   /* IE6-9 */
   background-repeat: no-repeat;
-  border: 1px solid #cccccc;
+  border: 1px solid #CCC;
   border-bottom-color: #bbb;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -2132,13 +2132,13 @@ a.btn {
 
 .btn-forward,
 .btn-forward:hover {
-  color: white !important;
+  color: #FFF !important;
   border: 1px solid #599441;
   text-shadow: 0 0 1px #69b93a; }
 
 .btn-secondary,
 .btn-secondary:hover {
-  color: white !important;
+  color: #FFF !important;
   border: 1px solid #c8862a;
   text-shadow: 0 0 1px #f99a2e; }
 
@@ -2261,7 +2261,7 @@ input[type="submit"].btn.small {
   margin-left: -5px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid black; }
+  border-top: 5px solid #000000; }
 
 .tooltip.left .tooltip-arrow {
   top: 50%;
@@ -2269,7 +2269,7 @@ input[type="submit"].btn.small {
   margin-top: -5px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid black; }
+  border-left: 5px solid #000000; }
 
 .tooltip.bottom .tooltip-arrow {
   top: 0;
@@ -2277,7 +2277,7 @@ input[type="submit"].btn.small {
   margin-left: -5px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid black; }
+  border-bottom: 5px solid #000000; }
 
 .tooltip.right .tooltip-arrow {
   top: 50%;
@@ -2285,7 +2285,7 @@ input[type="submit"].btn.small {
   margin-top: -5px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid black; }
+  border-right: 5px solid #000000; }
 
 .tooltip-inner {
   max-width: 200px;
@@ -2441,7 +2441,8 @@ input[type="submit"].btn.small {
   color: #617823; }
 
 #content-3 {
-  background: #f2711e; }
+  background: #f2711e;
+  padding: 0; }
 
 #content-4 {
   background: #471a0c;
@@ -2592,7 +2593,7 @@ ul.portfolio li a.txt {
   opacity: 0; }
 
 .reveal-img {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #FFF;
   margin-top: 10px; }
 
 ul.socialicons {
@@ -2670,6 +2671,39 @@ ul.socialicons li:hover {
   text-indent: -9000px;
   display: block;
   background: url(../images/awards/one-page-love-award.png) no-repeat; }
+
+.csslight {
+  position: absolute;
+  top: 360px;
+  right: 0;
+  z-index: 999; }
+
+.csslight a {
+  width: 84px;
+  height: 29px;
+  text-indent: -9000px;
+  display: block;
+  background: url(http://www.csslight.com/ribbons/small-csslight-ribbon-black-right.png) no-repeat; }
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 3;
+  -moz-column-gap: 0px;
+  column-count: 3;
+  column-gap: 0px; }
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important; }
+
+#photos a:hover div {
+  width: 100%;
+  height: 100%;
+  background: black; }
 
 /* #Media Queries
 ================================================== */
@@ -2750,8 +2784,8 @@ header {
   width: 120px;
   height: 50px;
   text-align: center;
-  border-right: 1px solid #cccccc;
-  border-left: 1px solid white;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #FFF;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2776,7 +2810,7 @@ header {
   color: #7AC143;
   position: relative;
   top: 1px;
-  text-shadow: 0 1px 0 white; }
+  text-shadow: 0 1px 0 #FFF; }
 
 #navigation li:first-child {
   border-left: none;
