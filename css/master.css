@@ -2441,8 +2441,7 @@ input[type="submit"].btn.small {
   color: #617823; }
 
 #content-3 {
-  background: #f2711e;
-  padding: 0; }
+  background: #f2711e; }
 
 #content-4 {
   background: #471a0c;
@@ -2685,26 +2684,6 @@ ul.socialicons li:hover {
   display: block;
   background: url(http://www.csslight.com/ribbons/small-csslight-ribbon-black-right.png) no-repeat; }
 
-#photos {
-  /* Prevent vertical gaps */
-  line-height: 0;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 0px;
-  -moz-column-count: 3;
-  -moz-column-gap: 0px;
-  column-count: 3;
-  column-gap: 0px; }
-
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important; }
-
-#photos a:hover div {
-  width: 100%;
-  height: 100%;
-  background: black; }
-
 /* #Media Queries
 ================================================== */
 /* Smaller than 1386px (devices and browsers) */
@@ -2727,7 +2706,7 @@ ul.socialicons li:hover {
     font-size: 14px;
     line-height: 22px; } }
 @media only screen and (max-width: 480px) {
-  .cssreel, .csswinner, .cssdesignawards, .opl {
+  .cssreel, .csswinner, .cssdesignawards, .opl, .csslight {
     display: none; } }
 /* #Styleguide Styles
 ================================================== */
